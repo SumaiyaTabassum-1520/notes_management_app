@@ -3,8 +3,6 @@ import '../models/note.dart';
 import '../services/firestore_service.dart';
 import 'add_edit_note_screen.dart';
 
-/// The home screen: displays every note in Firestore in real time,
-/// and lets the user create, edit, or delete notes.
 class NotesListScreen extends StatelessWidget {
   NotesListScreen({super.key});
 

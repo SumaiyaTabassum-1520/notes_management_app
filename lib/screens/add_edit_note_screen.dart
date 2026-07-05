@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import '../models/note.dart';
 import '../services/firestore_service.dart';
 
-/// A single screen used for BOTH creating a new note and editing an
-/// existing one. If [note] is null we are creating; otherwise we're editing.
 class AddEditNoteScreen extends StatefulWidget {
   final Note? note;
 

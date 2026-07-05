@@ -1,8 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-/// Represents a single Note stored in the "notes" Firestore collection.
 class Note {
-  final String? id; // Firestore document ID (null for a note not yet saved)
+  final String? id;
   final String title;
   final String description;
   final Timestamp? createdAt;
@@ -16,7 +15,6 @@ class Note {
     this.updatedAt,
   });
 
-  /// Converts this Note into a Map that can be written to Firestore.
   Map<String, dynamic> toMap() {
     return {
       'title': title,
@@ -26,7 +24,6 @@ class Note {
     };
   }
 
-  /// Builds a Note from a Firestore document snapshot.
   factory Note.fromDocument(DocumentSnapshot doc) {
     final data = doc.data() as Map<String, dynamic>;
     return Note(
