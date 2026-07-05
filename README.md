@@ -19,7 +19,7 @@
     - Displays all notes stored in Firestore
 
 # Security
-### This repo includes a Firebase API key which should not be exposed so that I restricted the api key in google cloud console. So the key is visible, but it cannot be misused outside this app.
+#### This repo includes a Firebase API key which should not be exposed so that I restricted the api key in google cloud console. So the key is visible, but it cannot be misused outside this app.
 
 # How to run
 ## 1. Clone the repository
